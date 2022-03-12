@@ -1,0 +1,50 @@
+.btn {
+    border: none;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;   
+    border-radius: 30px;
+    font-size: 18px; 
+    
+}
+.nav button {
+    background-color:var(--pr-orange);
+    color:var(--pr-bckgrn);
+    line-height: var(--line-h);
+    cursor: pointer;
+}
+
+
+.main .content .btn {
+    background-color:var(--pr-orange);
+    color:var(--pr-bckgrn);
+    line-height: var(--line-h);
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: var(--pr-green);
+    background: linear-gradient(10deg, rgba(140,226,217,1) 0%, rgba(255,175,0,1) 100%);
+
+}
+.main .content .btn:hover {
+    background-color: var(--pr-green);
+    color: black;
+    background: linear-gradient(10deg, rgba(140,226,217,1) 0%, rgba(255,175,0,1) 100%);
+}
+.right-col .form-row .btn {
+    background-color:var(--pr-orange);
+    color:var(--pr-bckgrn);
+    line-height: var(--line-h);
+
+    padding-left: 30px;
+    padding-right: 30px;
+    
+
+    cursor: pointer;
+}
+.right-col .form-row .btn:last-child {
+    margin-left: 30px;
+    background-color: var(--pr-bckgrn);
+    color: black;
+    border: 1px solid black;
+}

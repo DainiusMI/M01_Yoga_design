@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Studio design</title>
+
+    <link rel="stylesheet" href="./css/btn.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/form.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="background-img">
+
+    </div>
+   
+        <header class="header">
+            <img class="logo" src="./img/logo.png" alt="">
+            <div class="nav">
+                <a class="btn", class="lnk" href="#">Home</a>
+                <a class="btn", class="lnk" href="#">Instructors</a>
+                <a class="btn", class="lnk" href="#">Schedule</a>
+                <a class="btn", class="lnk" href="#">About studio</a>
+                <a class="btn", class="lnk" href="#">Blog</a>
+                <a class="btn", class="lnk" href="#">Contacts</a>
+                <button class="btn"
+                onclick="document.getElementById('id01').style.display='block' "
+                >Login</button>
+            </div>   
+        </header>
+
+    <main class="main">
+        <div class="content">
+            <h1 class="heading">Welcome to <br>Yoga <span>Lifestyle</span> Studio!</h1>
+            <p class="phar">
+                We are trying very hard to create all the conditions so that you stay in the studio as comfortable and favarable for development, creativity and creation.
+            </p>
+            <button class="btn">Sign up for classes</button>
+
+        </div>
+
+       
+    </main>
+    <!--LOGIN FORM-->
+    <div id="id01" class="modal">
+        <span >&times;</span>
+        <form class="modal-form" action="">
+            <div class="left-col">
+                <h1>Login</h1>
+            </div>
+            <div class="right-col">
+                <div class="form-row">
+                    <label for="username">Username</label>
+                    <input id="username" type="text" placeholder="Enter your username" name="" id="">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password</label>
+                    <input  id="password" type="text" placeholder="Enter your username" name="" id="">
+                </div>
+                <div class="form-row">
+                    <button class="btn">Login</button> 
+                    <button class="btn" onclick="document.getElementById('id01').style.display='none'" title="Close Modal">Close</button>
+                </div>
+                
+                <!--<div class="close" onclick="document.getElementById('id01').style.display='none'" title="Close Modal">x</div>-->
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</html>
