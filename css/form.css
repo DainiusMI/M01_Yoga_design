@@ -1,16 +1,19 @@
 .modal {
     display: none;      /* Hidden by default */
     position: fixed; 
-    z-index: 1;         /* Sit on top */
+    z-index: 3;         /* Sit on top */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%; 
-    height: 60%; 
+    height: 80%; 
     background-color: #fefefe;   
     border: 2px solid var(--pr-yellow);
 }
-
+.modal-form {
+    display: inline-block;
+    z-index: 20;
+}
 
 .left-col {
     width: 40%;
@@ -23,9 +26,11 @@
     position: absolute;
     top: 0;
     bottom: 0;  
+    z-index: 21;
 }
 .left-col h1 {
     font-size: 45px;
+    z-index: 22;
 }
 .right-col {
     width: 60%;
@@ -34,13 +39,19 @@
     background-color: #fff;
     color: black;
     float:right;
-    position: relative;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    transform: translate(0%, -50%);
+    z-index: 21;
 
 }
 .form-row {
     display: inline-block;
     width: 100%;
     margin-bottom: 10px;
+    float: right;
+    z-index: 22;
 
 }
 .form-row:last-of-type {
@@ -52,6 +63,7 @@
     line-height: 25px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    z-index: 23;
  
 
 }
@@ -59,11 +71,19 @@
     display: inline-block;
     width:100%;
     line-height: 25px; 
+    z-index: 23;
+    border: none;
+    border-bottom: dotted 2px grey;
+
 }
-.form-row input:focus {
-    outline: red;
+.form-row  input:focus {
+
+    outline:dotted grey 2px;
 }
-/*
+.form-row  input::placeholder {
+    font-style: italic;
+    color: grey;
+}
   .close {
     width: 30px;    
     height: 30px;
@@ -72,8 +92,9 @@
     text-align: center;
     cursor: pointer;
     position: absolute;
-    top: -20px;
+    top: 0;
     right: 0;
     color: rgb(68, 68, 68);
+    z-index: 23;
   }
-  */
+ 

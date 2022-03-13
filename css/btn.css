@@ -31,20 +31,19 @@
     color: black;
     background: linear-gradient(10deg, rgba(140,226,217,1) 0%, rgba(255,175,0,1) 100%);
 }
-.right-col .form-row .btn {
+.modal-form .btn {
     background-color:var(--pr-orange);
     color:var(--pr-bckgrn);
     line-height: var(--line-h);
 
     padding-left: 30px;
     padding-right: 30px;
+
+    position: absolute;
+    z-index: 23;
     
+    bottom: 5%;
+    right: 25%;
 
     cursor: pointer;
-}
-.right-col .form-row .btn:last-child {
-    margin-left: 30px;
-    background-color: var(--pr-bckgrn);
-    color: black;
-    border: 1px solid black;
 }

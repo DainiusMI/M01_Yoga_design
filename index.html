@@ -38,7 +38,9 @@
             <p class="phar">
                 We are trying very hard to create all the conditions so that you stay in the studio as comfortable and favarable for development, creativity and creation.
             </p>
-            <button class="btn">Sign up for classes</button>
+            <button class="btn"
+            onclick="document.getElementById('id02').style.display='block' "
+            >Sign up for classes</button>
 
         </div>
 
@@ -46,30 +48,67 @@
     </main>
     <!--LOGIN FORM-->
     <div id="id01" class="modal">
-        <span >&times;</span>
+       
         <form class="modal-form" action="">
             <div class="left-col">
                 <h1>Login</h1>
             </div>
             <div class="right-col">
-                <div class="form-row">
-                    <label for="username">Username</label>
-                    <input id="username" type="text" placeholder="Enter your username" name="" id="">
-                </div>
-                <div class="form-row">
-                    <label for="password">Password</label>
-                    <input  id="password" type="text" placeholder="Enter your username" name="" id="">
-                </div>
-                <div class="form-row">
-                    <button class="btn">Login</button> 
-                    <button class="btn" onclick="document.getElementById('id01').style.display='none'" title="Close Modal">Close</button>
-                </div>
+                    <div class="form-row">
+                        <label for="username">Username</label>
+                        <input id="username" type="text" placeholder="Enter your username" name="" id="">
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password</label>
+                        <input  id="password" type="text" placeholder="Enter your username" name="" id="">
+                    </div>
+                    <div class="form-row">
+                       
+                        
+                    </div>
                 
-                <!--<div class="close" onclick="document.getElementById('id01').style.display='none'" title="Close Modal">x</div>-->
+                
             </div>
+            <button class="btn">Login</button> 
+            <div class="close" onclick="document.getElementById('id01').style.display='none'" title="Close Modal">x</div>
         </form>
     </div>
+     <!--SIGN UP FORM-->
+     <div id="id02" class="modal">
+      
+        <form class="modal-form" action="">
+            <div class="left-col">
+                <h1>Sign up</h1>
+            </div>
+            <div class="right-col">
+                    <div class="form-row">
+                        <label for="username">Username</label>
+                        <input id="username" type="text" placeholder="Enter your username" name="" id="">
+                    </div>
+                    <div class="form-row">
+                        <label for="Email">Email</label>
+                        <input id="Email" type="text" placeholder="Enter your email adress" name="" id="">
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password</label>
+                        <input  id="password" type="text" placeholder="Enter your password" name="" id="">
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password</label>
+                        <input  id="password" type="text" placeholder="Repeat your password" name="" id="">
+                    </div>
+                    <div class="form-row">
 
+
+                    </div>
+                
+                
+            </div>
+            <button class="btn">Sign up</button> 
+            <div class="close" onclick="document.getElementById('id02').style.display='none'" title="Close Modal">x</div>
+        </form>
+    </div>
+    
 
 </body>
 </html>
